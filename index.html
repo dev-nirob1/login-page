@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7e464cca7d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="font-mono">
+    <div style="background-image: linear-gradient(to bottom, #222222, rgba(21, 21, 21, 0)), url('./assets/bg1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+        class="bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00), url('./assets/bg1.jpg')] bg-no-repeat bg-center bg-cover h-screen">
+        <header class="container mx-auto">
+            <!-- <img src="./assets/bg.jpg" alt=""> -->
+            <!-- navbar -->
+            <nav class="flex items-center justify-between p-3 text-white">
+                <h1 class="text-3xl">
+                    <a href="#">Logo</a>
+                </h1>
+                <div class="block md:hidden">
+                    <button><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+                <ul class="hidden md:flex items-center font-medium text-gray-100">
+                    <li class="mr-8">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="mr-8">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="mr-8">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="mr-8">
+                        <a href="#">Contact</a>
+                    </li>
+
+                    <li class="mr-8 border rounded-md px-5 py-2">
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+             
+            </nav>
+        </header>
+
+        <!-- login  -->
+        <section class="flex items-center justify-center h-[calc(100vh-66px)] container mx-auto">
+            <form
+                class="bg-white/10 backdrop-blur-lg border border-white/30 shadow-lg max-w-md rounded-xl px-5 py-8 relative bg-opacity-30">
+
+                <h2 class="text-2xl text-center text-gray-100">Login</h2>
+
+                <button
+                    class="absolute top-0 right-0 px-3 py-1 rounded-tr-xl rounded-bl-xl bg-black text-white">X</button>
+                <div class="mt-5 space-y-5">
+                    <div class="relative">
+                        <label for="email"></label>
+                        <input
+                            class="border-b-2 border-gray-900 w-full py-2 bg-transparent placeholder:text-gray-950 outline-none"
+                            type="email" id="email" name="email" placeholder="Email">
+                            <p class="absolute top-3 right-1"><i class="fa-solid fa-envelope"></i></p>
+                    </div>
+
+
+                    <div class="relative">
+                        <label for="password"></label>
+                        <input
+                            class="border-b-2 border-gray-900 w-full py-2 bg-transparent placeholder:text-gray-950 outline-none"
+                            type="password" id="password" name="password" placeholder="Password">
+                            <p class="absolute top-3 right-1"><i class="fa-solid fa-lock"></i></p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-sm my-5">
+                    <div class="flex items-center gap-2">
+                        <label for="checkbox"></label>
+                        <input class="cursor-pointer" type="checkbox" name="checkbox" id="checkbox">
+                        <p class="font-medium">Remember Me</p>
+                    </div>
+                    <div>
+                        <p class="hover:underline font-medium cursor-pointer">Forget Password</p>
+                    </div>
+                </div>
+
+                <button class="text-gray-100 bg-gray-900 w-full py-2 rounded-md">Login</button>
+                <p class="text-center mt-5">Don't Have An Account? <a class="hover:underline hover:text-blue-800"
+                        href="http://" target="_blank" rel="noopener noreferrer">Register</a></p>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
